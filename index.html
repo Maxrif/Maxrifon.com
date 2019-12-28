@@ -1,17 +1,25 @@
 ---
 layout: default
-title: Home
-menu: no
 ---
-<h1 class="page-title">Articles</h1>
-<div class="home">
-<div class="post-list">
-{% for post in site.posts %}
-<a style="text-decoration:none"  href="{{ post.url | prepend: site.baseurl }}">
-      {% include post-cards.html %}
-</a>
-{% endfor %}
-</div>
-</div>
-
-
+<main class="container">
+  <div class="row">
+    <div class="col-2">
+      <h1>{{ site.title }}</h1>
+      <p class="lead">
+          <br/>{{ site.desc }}
+      </p>
+      <article>
+        <h1>Posts</h1>
+      </article>
+      {% for post in paginator.posts %}
+      <article>
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.excerpt }}</p>
+        <a href="{{ site.baseurl }}/{{ post.url }}">[ Read ]</a>
+      </article>
+      {% endfor %}
+      {% include buttons.html %}
+    </div>
+    {% include sidebar.html %}
+  </div>
+</main>

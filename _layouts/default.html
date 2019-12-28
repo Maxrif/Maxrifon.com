@@ -1,49 +1,18 @@
----
-layout: compress
----
-
 <!DOCTYPE html>
-<html>
-{% include head.html %}
-
-<body>
-   <div class="container">
-       
-    {% include sidebar.html %}
-
-    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->   
-        <div id="main">
-
-             {% include header.html %}
-                    <div class="page-content">
-                        <div class="wrapper">
-                            {{ content }}
-                        </div>
-                    {% include footer.html %}
-                    </div>
-                {% if site.analytics %}
-                    {% include analytics.html %}
-                {% endif %}  
-        </div>
-        
-        
-        
-        
-        
-<script>
-    /* Set the width of the side navigation to 250px */
-    function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    }
-
-    /* Set the width of the side navigation to 0 */
-    function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    }
-</script>
-        
-        
-</div>            
-        
-</body>
+<html lang="en" >
+    <head>
+        <meta charset="utf-8">
+        <title>
+            {% if post.title %}{{ post.title }}
+                •
+            {% else %}
+            {% endif %}{{ site.title }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Cutive+Mono">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
+    </head>
+    <body>
+        {{ content }}
+    </body>
 </html>
