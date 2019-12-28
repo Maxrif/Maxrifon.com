@@ -1,28 +1,29 @@
-# Minimal Text
+Bheema is a theme suitabel for image heavy journal kind of websites. 
 
-Minimal Text is a clean and lightweight Jekyll Theme
+Demo: [http://webjeda.com/ashwath/](http://webjeda.com/ashwath/)
 
-## Documentation
 
-__Baseurl__
+## Installation
+* Fork the repository
+* Go to settings and set Github Pages source as master.
+* Your new site should be ready.
 
-```yaml
----
-title: Minimal Text
-baseurl: "/Minimal-Text"
-```
-The site baseurl is prepended to asset links and the home button in the `post.html` layout. Please note it must start with a "/"
-By changing this you are changing the location of your website. gh.clarkhacks.com`/Minimal-Text` is the location of Minimal-Text in my case.
 
-__Pagination__
+## Screenshots
+Default theme:
 
-```yaml
-paginate: 5
-paginate_path: "/:num/"
-```
-`paginate` in `_config.yml` is the number of post blocks that will appear on a single page.
-`paginate_path` is at what location your blog pages will be displayed.
+![ashwath jekyll theme](http://webjeda.com/ashwath/images/Default.png)
 
-__The documentation has been implemented because of user questions.__ For more documentation to be please request what you need defined.
+Color schemes (Full version)
 
-![screenshot](screenshot.jpg)
+![ashwath jekyll theme](http://webjeda.com/ashwath/images/Purple.png)
+
+![ashwath jekyll theme](http://webjeda.com/ashwath/images/Blood.png)
+
+![ashwath jekyll theme](http://webjeda.com/ashwath/images/Mango.png)
+
+
+For more themes visit - [https://jekyll-themes.com](https://jekyll-themes.com)
+
+## License
+MIT License
